@@ -1,0 +1,793 @@
+@font-face {
+    font-family: 'GreatVibes';
+    src: url(/fonts/GreatVibes-Regular.ttf);
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Sevillana';
+    src: url(/fonts/Sevillana-Regular.ttf);
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Niconne';
+    src: url(/fonts/Niconne-Regular.ttf);
+    font-weight: 400;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;        
+}
+
+html, body {
+    height: 100%;
+    overflow: hidden;
+    text-align: center;
+    background-color: #f8bfe7;
+    background-image: url(/imagenes/fondo_rosa.jpeg);
+}
+
+/* Estilo básico para el tooltip */
+/*
+.tooltip {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    color: #fff;
+    padding: 5px;
+    border-radius: 3px;
+    font-size: 12px;
+    z-index: 1000;
+    transform: translateX(240px) translateY(-4px);    
+}
+.tooltip.show {
+    display: block;
+}
+*/
+
+.container {
+    position: relative; /* Necesario para que el tooltip se posicione correctamente */
+}
+
+body {
+    overflow-y: scroll; /* Permite el desplazamiento vertical */    
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;    
+    height: 100vh;         
+}
+
+/*
+#stars-container {
+    position: fixed;
+    width: 98%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.star {
+    position: absolute;
+    width: 2px;  -- Tamaño base pequeño 
+    height: 2px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    box-shadow: 0 0 6px rgb(184, 235, 177), 0 0 12px rgb(172, 229, 151);
+    animation: blink 3s ease-in-out infinite;
+    opacity: 0;
+}
+
+@keyframes blink {
+    0%, 100% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+}
+*/
+
+.centra{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column; 
+    font-family: 'GreatVibes';        
+    font-weight: 400;   
+}
+
+.fullscreen-section {
+    position: relative;
+    width: 100%;    
+}
+
+.caja_secciones{
+    border-color: rgba(196, 39, 143, 0.733);
+    border-width: 10px;
+    border-style: double;    
+    padding-top: 3%;
+    padding-bottom: 5%;
+}
+
+#section_presentacion{
+    height: 50vh;
+    margin-top: 6px;
+}
+
+#audio-container {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    z-index: 2;
+    /* left: 6%;
+    top: 105%; */
+    /*Ubicarcion de boton play en la imagen de presentacion*/
+    left: 4%;
+    top: 80%;
+}
+
+#audio-container > div:nth-last-child(1) {
+    position: relative;
+    top: 37px;
+    right: 42%;
+    font-size: 14px;
+}
+
+#audio-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+#play-pause-text {
+    margin-left: 6px;
+    font-size: 25px;
+    color: #065631;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#pause {
+    width: 27px;
+    height: 27px;
+}
+
+.presentacion-imagen img {    
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50vh;
+}
+
+.text-float{
+    position: absolute;
+}
+
+.presentacion_texto{
+    top: 45px;    
+    font-size: 40px;
+    left: 55px;
+    font-family: 'GreatVibes';
+    color: #065631;
+}
+
+/*
+.presentacion_personas{
+    top: 120px;
+    left: 19px;
+    font-family: 'Sevillana' !important;
+    color: #065631;
+    font-size: 38px;
+    width: 96px;
+    line-height: 40px;    
+}
+*/    
+
+.centrar_elementos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.centrar_elementos > div:first-child{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    /* width: 100px;   */
+}
+
+#section-fecha-evento .centrar_elementos > table{
+    /* font-size: 55px; */
+    color: #a10967;
+    width: 100%;
+    line-height: 2.2em;
+    margin-top: 20px;    
+}
+
+.pregunta {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.respuesta {
+    font-size: 20px;
+    color: #cc279a;
+}
+
+/*
+.texto_noFaltes{    
+    font-size: 40px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 5%;
+    color: #08691d;
+}
+*/
+
+.mensaje_regresiva{
+    font-size: 40px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: #08691d;
+}
+
+.cuenta-atras{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.cuenta-atras > div{
+    line-height: 1;
+}
+
+#cuenta-atras > div > p:nth-child(1){
+    font-size: 35px;
+}
+
+#cuenta-atras > div > p:nth-child(2){
+    font-size: 15px;
+    font-weight: 600;
+}
+
+
+.titulo_tarjeta{
+    font-family: 'Niconne';
+    font-size: 45px;
+    color: #063806;
+    text-shadow: rgb(62, 153, 34) 1px 0 10px;
+}
+
+/*
+.btn-general{
+    margin-top: 5%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.btn-general a:hover{
+    background-color:rgb(71, 212, 66);
+    color:black;
+}
+*/
+
+/*
+.grid-container {
+    font-weight: bold;
+    line-height: 1.3;    
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto; 
+    gap: 10px;
+    margin: 25px 30px 10px 30px;
+}
+
+.iglesia-item1, .salon-item2 {
+    font-size: 37px;
+    width: 100% !important;
+    justify-content: center;
+    text-align: center;
+}
+
+.iglesia-item3, .salon-item3 {
+    font-size: 33px;
+}
+
+.iglesia-item4, .salon-item4 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+.iglesia-item2 img, .salon-item1 img {
+    border-radius: 15px;
+    border: 5px solid #4e814fbd;
+}
+
+.iglesia-item1, .iglesia-item3, .iglesia-item4, .salon-item1, .salon-item2, .salon-item3, .salon-item4 {
+    grid-column-start: 1; 
+}
+
+.iglesia-item2 {
+    grid-column-start: 2; 
+}
+
+.iglesia-item1, .iglesia-item3, .iglesia-item4 {
+    grid-column-end: 2;
+}
+
+.iglesia-item2, .salon-item1, .salon-item2, .salon-item3, .salon-item4 {
+    grid-column-end: 3;
+}
+
+.iglesia-item1, .iglesia-item2, .salon-item1 {
+    grid-row-start: 1;
+}
+
+.salon-item2, .iglesia-item3 {
+    grid-row-start: 2;
+}
+
+.iglesia-item4, .salon-item3 {
+    grid-row-start: 3;
+}
+
+.salon-item4 {
+    grid-row-start: 4;
+}
+
+.iglesia-item2 {
+    grid-row-end: 4;
+}
+
+.iglesia-item2 img{
+    width: 150px;
+}
+
+.salon-item1 img{
+    width: 300px;
+}
+*/    
+
+/*
+#section-regalo > div > div:nth-child(3), #section-asistencia > div > div:nth-child(3), #section-video > div > div:nth-child(3) {
+    margin: 8px 20px;
+    font-size: 30px;
+}
+
+.ico-copy {
+    width: 21px;
+    height: 21px; 
+    margin-left: 6px;
+} 
+
+.bancos {
+    width: 80%;    
+    text-align: center;
+    margin-top: 5px;
+}
+
+.bancos > div > div {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000;
+}
+
+.bancos > div:first-child{
+    width: 100%;
+    margin-bottom: 10px;    
+}
+
+.bancos > div > div > div:first-child {
+    font-size: 17px;
+    width: 100%;    
+    text-align: center;
+}
+
+.bancos > div > span {    
+    font-size: 24px;
+    color: #08691d;
+    font-weight: 600;
+}
+*/
+
+/*
+.container span {
+    font-size: 14px;
+}
+*/
+
+/*
+#section-asistencia .confir_what {
+    line-height: 0.7;
+    margin-top: 20px;
+}
+
+#section-asistencia .confir_what p {
+    font-size: 28px;
+    color: #08691d;
+    font-weight: 600;    
+}
+*/
+
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    padding: 10px;
+}
+
+.image-container .image {
+    height: 250px;
+    width: 250px;
+    border: 8px solid #fff;
+    box-shadow: 0 5px 15px rgba(0,0,0,.1);
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.image-container .image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: .2s linear;
+    border-radius: 12px;
+}
+
+.image-container .image:hover img {
+    transform: scale(1.1);
+}
+
+.popup-image {
+    position: fixed;
+    top:0;
+    left:0;
+    background: rgba(0,0,0,.9);
+    height: 100%;
+    width: 100%;
+    z-index: 100;
+    display: none;
+}
+
+.popup-image span {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 50px;
+    font-weight: bolder;
+    color: #fff;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.popup-image img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border: 7px solid #fff;
+    width: 350px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.image-redim2 img {
+    width: 300px;
+}
+
+.image-redim3 img {
+    width: 270px;
+}
+
+#section-momentos .centrar_elementos div:nth-child(3) {
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*
+.invitacion_video {
+    border: 3px solid;
+    border-radius: 5px;
+    color: #08691d;
+    display: flex;    
+}
+
+.invitacion_video video {
+    width: 300px;
+}
+*/
+
+@media (min-width: 768px){
+    .centra{
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    #section_presentacion, .presentacion-imagen img {
+        height: 55vh;
+    }
+
+    /* .texto_noFaltes,  */
+    .mensaje_regresiva{
+        font-size: 50px;
+    }
+
+    .titulo_tarjeta{
+        font-size: 50px;
+    }
+
+    #section-fecha-evento .centrar_elementos > div:nth-child(3) {
+        font-size: 62px;
+    }
+
+    .presentacion_texto{
+        font-size: 50px;
+        top: 30px;
+        left: 105px;
+    }
+
+    /*
+    .presentacion_personas{
+        left: 50px;
+        font-size: 53px;
+        line-height: 52px;
+        text-align: right;
+    }
+    */
+
+    /* .caja_secciones > .centrar_elementos > div:nth-child(1) {
+        width: 140px;
+    } */
+
+    #cuenta-atras > div > p:nth-child(1) {
+        font-size: 40px;
+    }
+
+    #cuenta-atras > div > p:nth-child(2) {
+        font-size: 20px;
+    }
+
+    /*
+    .iglesia-item1, .salon-item2 {
+        font-size: 42px;
+    }
+    
+    .iglesia-item3, .salon-item3 {
+        font-size: 38px;
+    }
+
+    .iglesia-item4, .salon-item4 {
+        font-size: 22px;
+    }
+
+    .iglesia-item2 img {
+        width: 170px;
+    }
+
+    .salon-item1 img {
+        width: 360px;
+        margin-bottom: 10px;
+    }
+
+    .btn-general a {
+        font-size: 19px;
+    }
+    */
+    
+    .popup-image span {
+        right: 30px;
+        font-size: 65px;
+    }
+
+    .popup-image img {
+        width: 700px;                
+    }
+
+    /*
+    #section-regalo > div > div:nth-child(3), #section-asistencia > div > div:nth-child(3), #section-video > div > div:nth-child(3) {
+        margin: 8px 25px;
+        font-size: 36px;
+    }
+
+    .bancos > div > span, #section-asistencia .confir_what p {
+        font-size: 28px;
+    }
+
+    .bancos > div > div > div:first-child {
+        font-size: 19px;
+    }
+
+    .container span {
+        font-size: 17px;
+    }
+
+    .ico-copy {
+        width: 28px;
+        height: 28px;
+    }
+
+    .tooltip {
+        transform: translateX(430px) translateY(8px);
+    }
+    */
+
+    #section-momentos .centrar_elementos div:nth-child(3) {
+        font-size: 17px;   
+    }
+
+    #audio-container {
+        left: 11%;
+        top: 106%;
+    }
+    
+    #audio-container > div:nth-last-child(1) {
+        top: 37px;
+        right: 42%;
+        font-size: 14px;
+    }
+       
+    #play-pause-text {
+        font-size: 25px;
+    }
+    
+    #pause {
+        width: 32px;
+        height: 32px;
+    }
+    
+    .image-redim img {
+        width: 450px;
+    }
+
+    .image-redim2 img {
+        width: 350px;
+    }
+
+    .image-redim3 img {
+        width: 300px;
+    }
+
+    .invitacion_video video {
+        width: 450px;
+    }
+}
+
+@media (min-width: 1024px){
+    .centra{
+        margin-left: 65px;
+        margin-right: 65px;
+    }
+
+    #section_presentacion, .presentacion-imagen img {
+        height: 70vh;
+    }
+
+    /* .texto_noFaltes,  */
+    .mensaje_regresiva{
+        font-size: 60px;
+    }
+
+    .titulo_tarjeta{
+        font-size: 62px;
+    }
+
+    #section-fecha-evento .centrar_elementos > div:nth-child(3) {
+        font-size: 70px;
+    }
+
+    .presentacion_texto{
+        font-size: 64px;
+        top: 45px;
+        left: 119px;
+    }
+
+    /*
+    .presentacion_personas{
+        left: 59px;
+        font-size: 65px;
+        line-height: 65px;
+        top: 160px;
+        text-align: right;
+    }
+    */
+
+    /* .caja_secciones > .centrar_elementos > div:nth-child(1) {
+        width: 190px;
+    } */
+
+    #cuenta-atras > div > p:nth-child(1) {
+        font-size: 50px;
+    }
+
+    #cuenta-atras > div > p:nth-child(2) {
+        font-size: 25px;
+    }
+
+    /*
+    .iglesia-item1, .salon-item2 {
+        font-size: 52px;
+    }
+    
+    .iglesia-item3, .salon-item3 {
+        font-size: 45px;
+    }
+
+    .iglesia-item4, .salon-item4 {
+        font-size: 27px;
+    }
+
+    .iglesia-item2 img {
+        width: 190px;
+    }
+
+    .salon-item1 img {
+        width: 420px;
+        margin-bottom: 15px;
+    }
+
+    .popup-image span {
+        right: 36px;
+        font-size: 75px;
+    }
+
+    .popup-image img {
+        width: 700px;        
+    }
+    */
+
+    /*
+    #section-regalo > div > div:nth-child(3), #section-asistencia > div > div:nth-child(3), #section-video > div > div:nth-child(3) {
+        margin: 8px 35px;
+        font-size: 40px;
+    }
+
+    .bancos > div > span, #section-asistencia .confir_what p {
+        font-size: 33px;
+    }
+
+    .tooltip {
+        transform: translateX(530px) translateY(8px);
+    } 
+    */
+    
+    #section-momentos .centrar_elementos div:nth-child(3) {
+        font-size: 20px;   
+    }
+
+    #audio-container {
+        left: 11%;
+        top: 106%;
+    }
+    
+    #audio-container > div:nth-last-child(1) {
+        font-size: 17px;
+    }
+       
+    #play-pause-text {
+        font-size: 28px;
+    }
+    
+    #pause {
+        width: 35px;
+        height: 35px;
+    }
+
+    .image-redim2 img {
+        width: 500px;
+    }
+
+    .image-redim3 img {
+        width: 450px;
+    }
+
+    .invitacion_video video {
+        width: 600px;
+    }
+}

@@ -1,11 +1,470 @@
+<!-- Esto sitio fue diseñado por el propietario Jonatan Santiago Villarruel. Fecha de creación 26/11/2024 -->
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="/styles/bootstrap-5.3.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="shortcut icon" href="/imagenes/ico-anillos-de-boda.png" title="anillo iconos">
+    <title>Cena fin de año Valientes</title>
 </head>
+
 <body>
     
+    <!-- <div id="stars-container"></div> -->
+    <section class="fullscreen-section" id="section_presentacion">
+        <div>
+            <div class="presentacion-imagen">
+                <img src="imagenes/valientes-2.jpeg" alt="imagen portada">
+            </div>
+            <div class="presentacion_texto text-float">                
+                 <span class="typed"></span>
+                 <div id="texto-presentacion">
+                    <p>
+                        Cena de fin de año 2024
+                    </p>
+                 </div>
+            </div>
+            <!--
+                <div class="presentacion_personas text-float">
+                    <span class="typed-nosotros"></span>
+                    <div id="nombre-nosotros">
+                        <p>
+                            M.Emilia & Jonatan
+                        </p>                    
+                    </div>
+                </div>
+            -->
+        </div>
+        <div id="audio-container">
+            <div id="audio-icon">
+              <img id="pause" src="/imagenes/play-circle.svg" alt="play">
+              <span id="play-pause-text">Play</span>
+            </div>
+            <audio id="audio" src="/media/musica_fondo.mp3" loop></audio>
+            <div>
+                <p>(Subí el volumen)</p>
+            </div>
+        </div>
+    </section>
+    
+    <div class="centra">
+        <section class="fullscreen-section caja_secciones" id="section-fecha-evento">
+            <div class="centrar_elementos">
+                <table>
+                    <tr>
+                        <td class="pregunta">
+                            ¿Dónde?
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="respuesta">
+                            Seven Foot - Estomba 197
+                        </td>                        
+                    </tr>
+                    <tr>
+                        <td class="pregunta">
+                            ¿Cuándo?
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="respuesta">
+                            05/11/2024
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="pregunta">
+                           ¿A que hora? 
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="respuesta">
+                           20:30 hs. 
+                        </td>
+                    </tr>
+                </table>
+                <!--                 
+                <div>
+                    <img src="../imagenes/anillos8.png">
+                </div>
+                <div class="texto_noFaltes">
+                    No puedes faltar a este día tan importante
+                </div>
+                <div>
+                    Sábado <br>
+                    02 <br>
+                    Noviembre
+                </div>
+                 -->
+            </div>
+        </section>
+        <section class="fullscreen-section caja_secciones" id="section-cuenta-regresiva">            
+            <div class="mensaje_regresiva">
+                <p>Falta poco para vernos</p>
+            </div>
+            <div class="cuenta-atras" id="cuenta-atras">
+                <div>
+                    <p id="dias">00</p>
+                    <p>Días</p>
+                </div>
+                <div>
+                    <p id="horas">00</p>
+                    <p>Horas</p>
+                </div>
+                <div>
+                    <p id="minutos">00</p>
+                    <p>Minutos</p>
+                </div>
+                <div>
+                    <p id="segundos">00</p>
+                    <p>Segundos</p>
+                </div>
+            </div>
+            <div class="mensaje_regresiva" id="completado">
+            </div>
+                <!--                 
+                <div class="centrar_elementos">
+                    <div>
+                        <img src="/imagenes/anillos8.png">
+                    </div>
+                </div>
+                <div class="mensaje_regresiva">
+                    <p>Falta poco para vernos</p>
+                </div>
+                <div class="cuenta-atras" id="cuenta-atras">
+                    <div>
+                        <p id="dias">00</p>
+                        <p>Días</p>
+                    </div>
+                    <div>
+                        <p id="horas">00</p>
+                        <p>Horas</p>
+                    </div>
+                    <div>
+                        <p id="minutos">00</p>
+                        <p>Minutos</p>
+                    </div>
+                    <div>
+                        <p id="segundos">00</p>
+                        <p>Segundos</p>
+                    </div>
+                </div>
+                <div class="mensaje_regresiva" id="completado">
+                </div>
+                 -->
+        </section>
+        <!-- <section class="fullscreen-section caja_secciones" id="section-ceremonia">            
+            <div class="centrar_elementos">
+                <div>
+                    <img src="/imagenes/anillos8.png">
+                </div>
+                <div class="titulo_tarjeta">
+                    Ceremonia
+                </div>
+                <div class="grid-container">
+                    <div class="iglesia-item1">Iglesia de Santa Lucia</div>
+                    <div class="iglesia-item2">
+                        <img src="/imagenes/iglesia.jpg" alt="Iglesia">
+                    </div>
+                    <div class="iglesia-item4">Israel 26, Bahía Blanca</div>
+                    <div class="iglesia-item3">20:00 hs.</div>
+                </div>
+                <div class="btn-general">                    
+                    <a class="btn btn-success" href="https://maps.app.goo.gl/c2DVoD1dKGg937s56" role="button">Ver
+                        Ubicación</a>
+                </div>
+            </div>
+        </section> -->
+        <!-- <section class="fullscreen-section caja_secciones" id="section-salon">            
+            <div class="centrar_elementos">
+                <div>
+                    <img src="/imagenes/anillos8.png">
+                </div>
+                <div class="titulo_tarjeta">
+                    Recepción
+                </div>                
+                <div class="grid-container">
+                    <div class="salon-item1">
+                        <img src="/imagenes/salon.jpg" alt="Altos de Alem">
+                    </div>
+                    <div class="salon-item2">Altos de Alem</div>
+                    <div class="salon-item3">21:30 hs.</div>
+                    <div class="salon-item4">Av. Naposta 761, Bahía Blanca</div>
+                </div>
+                <div class="btn-general">                    
+                    <a class="btn btn-success" href="https://maps.app.goo.gl/TMFcYJnhcdREAqzK6" role="button">Ver
+                        Ubicación</a>
+                </div>
+            </div>
+        </section> -->
+        <!-- <section class="fullscreen-section caja_secciones" id="section-regalo">            
+            <div class="centrar_elementos">
+                <div>
+                    <img src="/imagenes/anillos8.png">
+                </div>
+                <div class="titulo_tarjeta">
+                    Regalo
+                </div>
+                <div>
+                    Queridos amigos y familiares, si desean darnos un regalo,
+                    una contribución económica sería ideal para nuestras
+                    futuras metas juntos.
+                    <br>
+                    Lo puedes hacer en efectivo colocándolo en un sobre, que podrás depositar en la urna que encontrarás
+                    en la fiesta o por transferencia bancaria a nuestras cuentas.
+                    <br>
+                    ¡Muchas Gracias!
+                </div>
+                <br>
+                <div class="bancos">
+                    <div>
+                        <span>
+                            Jonatan Santiago Villarruel
+                        </span>
+                        <div>
+                            <div>
+                                <b>
+                                    <span>
+                                        Banco Credicoop
+                                    </span>
+                                </b>
+                            </div>
+                            <div class="container">
+                                <b>
+                                    <span>
+                                        CBU:
+                                    </span>
+                                </b>
+                                <span id="pela-cbu-text">
+                                    1910127155112700368967
+                                </span>
+                                <img src="/imagenes/copy.svg" class="ico-copy" id="pela-cbu" alt="Copy CBU">
+                            </div>
+                            <div class="container">
+                                <b>
+                                    <span>
+                                        Alias:
+                                    </span>
+                                </b>
+                                <span id="pela-alias-text">
+                                    Villarruel-Jonatan
+                                </span>
+                                <img src="/imagenes/copy.svg" class="ico-copy" id="pela-alias" alt="Copy CBU">
+                            </div>
+                            <div id="tooltip" class="tooltip">Texto copiado!</div>
+                        </div>
+                    </div>
+                    <div>
+                        <span>
+                            María Emilia Salustro
+                        </span>
+                        <div>
+                            <div>
+                                <b>
+                                    <span>
+                                        Banco Credicoop
+                                    </span>
+                                </b>
+                            </div>
+                            <div class="container">
+                                <b>
+                                    <span>
+                                        CBU:
+                                    </span>
+                                </b>
+                                <span id="emi-cbu-text">
+                                    1910127155112704466803
+                                </span>
+                                <img src="/imagenes/copy.svg" class="ico-copy" id="emi-cbu">
+                            </div>
+                            <div class="container">
+                                <b>
+                                    <span>
+                                        Alias:
+                                    </span>
+                                </b>
+                                <span id="emi-alias-text">
+                                    ma.emilia.s
+                                </span>
+                                <img src="/imagenes/copy.svg" class="ico-copy" id="emi-alias">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section> -->
+        <!-- <section class="fullscreen-section caja_secciones" id="section-asistencia">            
+            <div class="centrar_elementos">
+                <div>
+                    <img src="/imagenes/anillos8.png">
+                </div>
+                <div class="titulo_tarjeta">
+                    Confirmar asistencia
+                </div>
+                <div>                    
+                    <p>
+                        Nos encantaría contar con su presencia en nuestra boda. Por tal motivo, les pedimos que nos
+                        confirmen asistencia antes del día 19/10/2024.
+                    </p>
+                    <p>
+                        ¡Gracias por ayudarnos a planificar este día especial!
+                    </p>
+                </div>
+                <div class="confir_what">
+                    <p>
+                        Emilia:
+                    </p>
+                    <div class="btn-general">
+                        <a class="btn btn-success"
+                            href="https://api.whatsapp.com/send?phone=+5492914427863&text=Con%20mucho%20gusto%20asistir%C3%A9/mos%20a%20la%20boda."
+                            role="button">Confirmar asistencia</a>                     
+                    </div>
+                </div>
+                <div class="confir_what">
+                    <p>
+                        Jonatan:
+                    </p>
+                    <div class="btn-general">
+                        <a class="btn btn-success"
+                            href="https://api.whatsapp.com/send?phone=+5492914130108&text=Con%20mucho%20gusto%20asistir%C3%A9/mos%20a%20la%20boda."
+                            role="button">Confirmar asistencia</a>                        
+                    </div>
+                </div>
+            </div>
+        </section> -->
+        <section class="fullscreen-section caja_secciones" id="section-momentos">
+            <div class="centrar_elementos">                
+                <div class="titulo_tarjeta">
+                    Momentos 2024
+                </div>
+                <div>
+                    (toca cada foto)
+                </div>                
+            </div>
+            <div class="image-container">
+                <div class="image">
+                    <img src="/imagenes/e_y_p_17.jpg" alt="">
+                </div>
+                <div class="image">
+                    <img src="/imagenes/e_y_p_18.jpg" alt="">
+                </div>
+                <div class="image">
+                    <img src="/imagenes/e_y_p_19.jpg" alt="">
+                </div>
+            </div>
+            <div class="popup-image" id="popup-image">
+                <span>&times;</span>
+                <img src="/imagenes/e_y_p_01.jpg" alt="">
+            </div>
+            <!-- <div class="centrar_elementos">
+                <div>
+                    <img src="/imagenes/anillos8.png">
+                </div>
+                <div class="titulo_tarjeta">
+                    Nuestros momentos
+                </div>
+                <div>
+                    (toca cada foto)
+                </div>                
+            </div>
+            <div class="image-container">
+                <div class="image">
+                    <img src="/imagenes/e_y_p_17.jpg" alt="">
+                </div>
+                <div class="image">
+                    <img src="/imagenes/e_y_p_18.jpg" alt="">
+                </div>
+                <div class="image">
+                    <img src="/imagenes/e_y_p_19.jpg" alt="">
+                </div>
+                <div class="image">
+                    <img src="/imagenes/e_y_p_01.jpg" alt="">
+                </div>
+                <div class="image image-redim">
+                    <img src="/imagenes/e_y_p_02.jpg" alt="">
+                </div>
+                <div class="image">
+                    <img src="/imagenes/e_y_p_03.jpg" alt="">
+                </div>
+                <div class="image">
+                    <img src="/imagenes/e_y_p_04.jpg" alt="">
+                </div>
+                <div class="image">
+                    <img src="/imagenes/e_y_p_05.jpg" alt="">
+                </div>
+                <div class="image">
+                    <img src="/imagenes/e_y_p_20.jpg" alt="">
+                </div>
+                <div class="image">
+                    <img src="/imagenes/e_y_p_06.jpg" alt="">
+                </div>
+                <div class="image">
+                    <img src="/imagenes/e_y_p_07.jpg" alt="">
+                </div>
+                <div class="image">
+                    <img src="/imagenes/e_y_p_08.jpg" alt="">
+                </div>
+                <div class="image">
+                    <img src="/imagenes/e_y_p_09.jpg" alt="">
+                </div>
+                <div class="image image-redim">
+                    <img src="/imagenes/e_y_p_10.jpg" alt="" style="object-position: 0 -12px;">
+                </div>
+                <div class="image">
+                    <img src="/imagenes/e_y_p_11.jpg" alt="">
+                </div>
+                <div class="image">
+                    <img src="/imagenes/e_y_p_12.jpg" alt="">
+                </div>
+                <div class="image">
+                    <img src="/imagenes/e_y_p_13.jpg" alt="">
+                </div>
+                <div class="image">
+                    <img src="/imagenes/e_y_p_14.jpg" alt="">
+                </div>
+                <div class="image image-redim">
+                    <img src="/imagenes/e_y_p_15.jpg" alt="">
+                </div>
+                <div class="image image-redim">
+                    <img src="/imagenes/e_y_p_16.jpg" alt="">
+                </div>                                
+            </div>
+            <div class="popup-image" id="popup-image">
+                <span>&times;</span>
+                <img src="/imagenes/e_y_p_01.jpg" alt="">
+            </div> -->
+        </section>
+        <!-- <section class="fullscreen-section caja_secciones" id="section-video">            
+            <div class="centrar_elementos">
+                <div>
+                    <img src="/imagenes/anillos8.png">
+                </div>
+                <div class="titulo_tarjeta">
+                    Video
+                </div>
+                <div>                    
+                    <p>
+                        Podés descargar la invitación en formato video, desde el siguiente botón.
+                    </p>
+                </div>
+                <div class="invitacion_video">
+                    <video src="/media/Invitacion_Boda_Emilia_Jonatan.mp4" controls></video>
+                </div>
+                <div class="btn-general">                    
+                    <a class="btn btn-success"
+                        href="/media/Invitacion_Boda_Emilia_Jonatan.mp4" download="Invitación_Boda_Emilia_Jonatan"
+                        role="button">Descargar Invitación</a>                     
+                </div>                
+            </div>
+        </section> -->
+    </div>
 </body>
+
+<script src="styles/bootstrap-5.3.3/js/bootstrap.bundle.min.js"></script>
+<script src="./js/typed.js"></script>
+<script src="./js/main.js"></script>
+
 </html>
