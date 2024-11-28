@@ -93,22 +93,22 @@ document.querySelectorAll('.image-container img').forEach(image =>{
     image.onclick = () => {
         document.querySelector('.popup-image').style.display = 'block';        
         document.querySelector('.popup-image img').src = image.getAttribute('src');
-        var imgNombre = image.getAttribute('src').slice(16,-4);
+        var imgNombre = image.getAttribute('src').slice(10,-4);
         const popup = document.getElementById('popup-image');
         
         popup.classList.remove('image-redim');
         popup.classList.remove('image-redim2');
         popup.classList.remove('image-redim3');
-
-        if (imgNombre === '02') {            
-            popup.classList.add('image-redim');
-        }
-        else if (imgNombre === '10'){
-            popup.classList.add('image-redim2');
-        }
-        else if (imgNombre === '13' || imgNombre === '15' || imgNombre === '16'){
-            popup.classList.add('image-redim3');
-        }
+        
+         if (imgNombre === '01' || imgNombre === '02' || imgNombre === '03' || imgNombre === '11') {
+             popup.classList.add('image-redim');
+         }
+        // else if (imgNombre === '10'){
+        //     popup.classList.add('image-redim2');
+        // }
+        // else if (imgNombre === '13' || imgNombre === '15' || imgNombre === '16'){
+        //     popup.classList.add('image-redim3');
+        // }
     }
 });
 
