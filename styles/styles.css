@@ -1,20 +1,20 @@
 @font-face {
     font-family: 'GreatVibes';
-    src: url(/fonts/GreatVibes-Regular.ttf);
+    src: url(fonts/GreatVibes-Regular.ttf);
     font-weight: 400;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Niconne';
-    src: url(/fonts/Niconne-Regular.ttf);
+    src: url(fonts/Niconne-Regular.ttf);
     font-weight: 400;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'PlaypenSans';
-    src: url(/fonts/PlaypenSans-VariableFont-wght.ttf);
+    src: url(fonts/PlaypenSans-VariableFont-wght.ttf);
     font-weight: 400;
     font-style: normal;
 }
@@ -30,7 +30,7 @@ html, body {
     overflow: hidden;
     text-align: center;
     background-color: #f8bfe7;
-    background-image: url(/imagenes/fondo_rosa.jpeg);
+    background-image: url(imagenes/fondo_rosa.jpeg);
 }
 
 .container {
