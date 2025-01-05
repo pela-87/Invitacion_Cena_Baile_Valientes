@@ -74,8 +74,8 @@ document.querySelector('.popup-image').onclick = () =>{
 var audio = document.getElementById('audio');
 var pause = document.getElementById('pause');
 var playPauseText = document.getElementById('play-pause-text');
-var ico_play = "/imagenes/play-circle.svg";
-var ico_pause = "/imagenes/pause-circle.svg";
+var ico_play = "imagenes/play-circle.svg";
+var ico_pause = "imagenes/pause-circle.svg";
 
 pause.addEventListener("click", function() {
 
