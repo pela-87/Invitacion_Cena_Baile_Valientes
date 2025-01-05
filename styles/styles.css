@@ -7,14 +7,14 @@
 
 @font-face {
     font-family: 'Niconne';
-    src: url(fonts/Niconne-Regular.ttf);
+    src: url(../fonts/Niconne-Regular.ttf);
     font-weight: 400;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'PlaypenSans';
-    src: url(fonts/PlaypenSans-VariableFont-wght.ttf);
+    src: url(../fonts/PlaypenSans-VariableFont-wght.ttf);
     font-weight: 400;
     font-style: normal;
 }
